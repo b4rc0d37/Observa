@@ -2,11 +2,9 @@ OBSERVA
 
 Instalacion
 
-chmod +x install.sh
+pip3 install -r requirements.txt
 
-bash install.sh
-
--------------------------------
+-----------------------------
 
 EJECUTAR
 
