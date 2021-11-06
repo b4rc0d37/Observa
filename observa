@@ -76,7 +76,7 @@ if args.outputfile:
                 logger.setLevel(logging.INFO)
         else:
             print(color.B+"[-]"+color.E+" Output directory: "+outputfile+": does not exist!")
-            # Standart Error Message
+            
             sys.exit()
     else:
         direct = os.path.split(outputfile)[0]
@@ -91,11 +91,9 @@ if args.outputfile:
                 logger.setLevel(logging.INFO)
             else:
                 print(color.B+"[-]"+color.E+" Error: "+direct+": not a directory!")
-                # Standart Error Message
                 sys.exit()
         else:
             print(color.B+"[-]"+color.E+" Output directory: "+direct+": does not exist!")
-            # Standart Error Message
             sys.exit()
         
 def handlesignal(signum,frame):
